@@ -1,0 +1,205 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header-container, .main-content, .footer-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #5e300559;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Cabeçalho */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0; /* Remove padding extra na parte inferior */
+    margin-bottom: 10px; /* Espaço entre o header e o main content */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid hsl(51, 86%, 23%); /* Borda colorida para a foto */
+}
+
+.header-container h1 {
+    margin: 10px 0 5px;
+    color: #96570ec5;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.job-title {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #eee; /* Linha divisória */
+    padding-top: 20px;
+    text-align: left; /* Alinha o texto do contato à esquerda */
+}
+
+.contact-info h2 {
+    color: #fdba01;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 8px;
+}
+
+.contact-info a {
+    color: #8a6708;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #b3a100;
+}
+
+/* Conteúdo Principal */
+.main-content section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+.main-content h2 {
+    color: #6e6d05;
+    border-bottom: 2px solid #adaf20;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Seções Específicas */
+.objective-section p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.education-item, .experience-item {
+    margin-bottom: 25px;
+}
+
+.education-item h3, .experience-item h3 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+}
+
+.education-item p, .experience-item p {
+    margin: 0 0 5px;
+}
+
+.experience-item ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.experience-item ul li {
+    margin-bottom: 5px;
+}
+
+.skills-category {
+    margin-bottom: 20px;
+}
+
+.skills-category h3 {
+    color: #c79d2b;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-category ul li {
+    background-color: #f1f1de;
+    color: #9e7607;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    border: 1px solid #2c3503;
+}
+
+
+/* Rodapé */
+.footer-container {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+/* Estilos para telas menores (Responsividade Básica) */
+@media (max-width: 768px) {
+    .header-container, .main-content, .footer-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .header-container h1 {
+        font-size: 2em;
+    }
+
+    .job-title {
+        font-size: 1em;
+    }
+
+    .main-content h2 {
+        font-size: 1.8em;
+    }
+
+    .education-item h3, .experience-item h3 {
+        font-size: 1.2em;
+    }
+
+    .skills-category ul li {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+}
